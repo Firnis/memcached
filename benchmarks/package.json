@@ -1,0 +1,17 @@
+{
+  "name": "benchmarks",
+  "version": "1.0.0",
+  "description": "To run the benchmark, make sure you have the correct modules installed. We are using `benchmarkjs` as our benchmark engine. So make sure you have the following modules installed.",
+  "main": "benchmark.js",
+  "scripts": {
+  	"get": "NODE_ENV=production node memcached.get.js && node memcache.get.js",
+  	"set": "NODE_ENV=production node memcached.set.js && node memcache.set.js",
+  	"start": "npm run set && npm run get",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "memcached": "^2.2.2"
+  }
+}
